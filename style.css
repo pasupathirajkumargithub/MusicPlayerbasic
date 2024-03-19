@@ -6,24 +6,28 @@ body {
   margin: 0vi;
   font-family: "Poppins";
 }
-.root {
-  display: flex;
+
+.rooter {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .navframe {
-  flex: 25vi;
+  flex: 25%;
+  height: 96vh;
   overflow: auto;
-  padding: 1rem;
-  margin: 1vi;
+  padding: 2rem;
+  margin: 1vi 1vi 1vi 0;
   border-radius: 1vi;
   background-color: rgba(243, 243, 243, 1);
 }
-
+.navframe::-webkit-scrollbar {
+  display: none;
+}
 .dataframe {
-  flex: 75vi;
-  margin: 1vi 1vi 1vi 0vi;
+  flex: 50%;
+  height: 96vh;
+  margin: 1vi 0;
 }
 
 nav {
@@ -34,12 +38,10 @@ nav {
 
 nav .img1 {
   padding: 2vi 0.4vi;
-  height: 4vi;
 }
 
 nav .img2 {
   padding: 2vi 0.7vi;
-  height: 2.5vi;
 }
 
 .title h2 {
@@ -56,9 +58,10 @@ nav .img2 {
 }
 
 .allsongs {
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.7vi;
 }
 
 .singlesong {
@@ -103,6 +106,14 @@ nav .img2 {
 }
 .songnameactive {
   color: rgba(206, 3, 106, 1);
+}
+
+.footer {
+  width: 100%;
+
+  font-size: 1vi;
+  line-height: 10px;
+  text-align: center;
 }
 
 /* ========================================= */
@@ -190,41 +201,56 @@ nav .img2 {
   display: none;
 }
 
-@media only screen and (max-width: 430px) {
+.musicicon {
+  width: 70%;
+  height: 7vi;
+  margin: 2vi auto 0;
+}
+.musicicon span {
+  float: left;
+  padding-left: 1vi;
+}
+.musicicon i {
+  float: right;
+  margin-top: 1vi;
+  padding-right: 1vi;
+}
+
+@media only screen and (max-width: 550px) {
   .mobile {
     display: block;
   }
-  .navframe {
+  .notmobile {
     display: none;
   }
-  nav .img2 {
-    height: 3.5vi;
+
+  .row {
+    margin: 1vi;
+    flex-direction: column-reverse;
   }
-  nav .img1 {
-    height: 5vi;
-  }
-  .dataframe {
-    margin: 5vi 10vi 10vi;
+  .dataframe,
+  .navframe {
+    margin: 0;
   }
   .songpalyimg img {
-    width: 55vi;
-    height: 40vi;
+    width: 65vi;
+    height: 45vi;
   }
   .songplayname {
-    font-size: 3.5vi;
+    font-size: 4.5vi;
   }
   .songplayartist {
-    font-size: 2vi;
+    font-size: 3vi;
   }
   .songplayduration {
     width: 50vi;
     height: 8vi;
   }
   .songplayduration .starttime {
-    font-size: 2vi;
+    font-size: 2.5vi;
   }
   .songplayduration .endtime {
-    font-size: 2vi;
+    font-size: 2.5vi;
   }
   .songtime {
     position: relative;
@@ -232,31 +258,50 @@ nav .img2 {
   }
   .songplaycontrol {
     width: 23vi;
-    height: 6vi;
+    height: 7vi;
   }
   .songplaycontrol i {
-    font-size: 3.7vi;
+    font-size: 4.7vi;
   }
   .volumeplaycontrol {
     width: 56vi;
   }
   .volumeplaycontrol i {
-    font-size: 2vi;
+    font-size: 2.5vi;
   }
-  .mobilesonglist {
-    text-align: left;
-    padding: 2vi 0px 0px 11vi;
-  }
+
   .title h2 {
-    font-size: 3vi;
+    font-size: 4vi;
   }
   .title p {
-    font-size: 2vi;
-  }
-  .songname {
-    font-size: 1.7vi;
+    font-size: 3vi;
   }
   .songartist {
-    font-size: 1.5vi;
+    font-size: 2.5vi;
+  }
+  .singlesong {
+    grid-template-rows: 4.5vi 2.5vi;
+
+    grid-template-columns: 4vi 9vi 56% auto;
+    height: 9vi;
+  }
+  .listimg {
+    font-size: 2.2vi;
+  }
+  .songimg img {
+    height: 7vi;
+    width: 7vi;
+  }
+  .songname {
+    font-size: 2.7vi;
+  }
+  .songduration {
+    font-size: 2vi;
+  }
+  .songyear {
+    font-size: 2vi;
+  }
+  .footer {
+    font-size: 2vi;
   }
 }

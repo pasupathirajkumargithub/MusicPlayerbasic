@@ -46,13 +46,11 @@ nav .img2 {
 
 .title h2 {
   font-weight: 900;
-  font-size: 2vi;
   margin: 1.4vi 0vi 0vi 0vi;
   padding: 0vi;
 }
 
 .title p {
-  font-size: 1vi;
   color: rgba(130, 130, 130, 1);
   margin-top: 0vi;
 }
@@ -177,6 +175,7 @@ nav .img2 {
 
 .volumeplaycontrol {
   width: 30vi;
+  align-items: center;
   justify-content: center;
   color: rgba(130, 130, 130, 1);
   margin: 1vi auto;
@@ -202,9 +201,9 @@ nav .img2 {
 }
 
 .musicicon {
-  width: 70%;
-  height: 7vi;
-  margin: 2vi auto 0;
+  height: 10vi;
+  font-size: x-large;
+  margin: 2vi 0 0;
 }
 .musicicon span {
   float: left;
@@ -225,7 +224,6 @@ nav .img2 {
   }
 
   .row {
-    margin: 1vi;
     flex-direction: column-reverse;
   }
   .dataframe,
@@ -233,75 +231,75 @@ nav .img2 {
     margin: 0;
   }
   .songpalyimg img {
-    width: 65vi;
-    height: 45vi;
+    width: 85vi;
+    height: 63vi;
   }
   .songplayname {
-    font-size: 4.5vi;
+    margin-top: 1vi;
+    font-size: 7vi;
   }
   .songplayartist {
-    font-size: 3vi;
+    font-size: 4vi;
   }
   .songplayduration {
-    width: 50vi;
-    height: 8vi;
+    width: 80vi;
+    height: 10vi;
   }
-  .songplayduration .starttime {
-    font-size: 2.5vi;
+  input[type="range"] {
+    --thumb-height: 3vi;
+    --track-height: 1vi;
+    --clip-edges: 0.125vi;
   }
+  .songplayduration .starttime,
   .songplayduration .endtime {
-    font-size: 2.5vi;
+    font-size: 3vi;
   }
   .songtime {
     position: relative;
     top: -1vi;
   }
   .songplaycontrol {
-    width: 23vi;
-    height: 7vi;
+    width: 40vi;
+    height: 10vi;
   }
   .songplaycontrol i {
-    font-size: 4.7vi;
+    font-size: 8vi;
   }
   .volumeplaycontrol {
-    width: 56vi;
+    margin-top: 3vi;
+    width: 95vi;
   }
   .volumeplaycontrol i {
-    font-size: 2.5vi;
+    font-size: 3.5vi;
+    padding: 1vi 3vi;
   }
 
-  .title h2 {
-    font-size: 4vi;
-  }
-  .title p {
-    font-size: 3vi;
-  }
   .songartist {
     font-size: 2.5vi;
   }
   .singlesong {
-    grid-template-rows: 4.5vi 2.5vi;
+    grid-template-rows: 5.5vi 5.5vi;
 
-    grid-template-columns: 4vi 9vi 56% auto;
-    height: 9vi;
+    grid-template-columns: 5vi 10vi 58% auto;
+    height: 12vi;
   }
   .listimg {
-    font-size: 2.2vi;
+    font-size: 3vi;
   }
   .songimg img {
-    height: 7vi;
-    width: 7vi;
+    height: 9vi;
+    width: 9vi;
   }
   .songname {
-    font-size: 2.7vi;
+    font-size: 3.7vi;
   }
   .songduration {
-    font-size: 2vi;
+    font-size: 3vi;
   }
   .songyear {
-    font-size: 2vi;
+    font-size: 3vi;
   }
   .footer {
-    font-size: 2vi;
+    font-size: 3vi;
   }
 }

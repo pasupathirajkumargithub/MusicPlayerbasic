@@ -13,7 +13,7 @@ const songs = [
     cover: "assets/images/cover2.png",
     year: 2015,
   },
-  {
+{
     name: "sv - Dogle",
     path: "/assets/musics/Song3.mp3",
     artist: "Sv -The Poet",

@@ -97,12 +97,6 @@ musicVolume.addEventListener("change", () => {
 });
 
 queue.forEach((item, i) => {
-  let audio = new Audio();
-  audio.src = songs[i].path;
-  setTimeout(() => {
-    songDuration[i].innerHTML = formteTime(audio.duration);
-  }, 700);
-
   item.addEventListener("click", () => {
     setMusic(i);
     playBtn.click();
